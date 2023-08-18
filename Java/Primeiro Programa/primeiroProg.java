@@ -7,7 +7,7 @@ public class primeiroProg {
         String strN1, strN2, strResultado;
         float fltN1, fltN2, fltResultado;
 
-        //Input String para as variaveis declaradas
+        //Input tipo String para as variaveis declaradas
         strN1 = JOptionPane.showInputDialog(null, "Digite o primeiro valor: ");
         strN2 = JOptionPane.showInputDialog(null, "Digite o segundo valor: ");
 
