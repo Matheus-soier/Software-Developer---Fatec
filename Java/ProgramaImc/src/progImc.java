@@ -4,9 +4,9 @@ public class progImc {
     public static void main(String[] args) throws Exception {
         Scanner calculoImc = new Scanner(System.in);
 
-        System.out.println("Digite sua altura: ");
+        System.out.println("Digite a sua altura: ");
         float fltAltura = calculoImc.nextFloat();
-        System.out.println("Digite seu peso: ");
+        System.out.println("Digite a seu peso: ");
         float fltPeso = calculoImc.nextFloat();
 
         float resultadoImc = fltPeso / (fltAltura * fltAltura);
