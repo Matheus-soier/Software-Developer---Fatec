@@ -15,13 +15,19 @@ public class exercicio12 {
         numero = numero / 10;
         quantidadeDeDigitos++;
       }
-      if(quantidadeDeDigitos == 3) {
+      if (quantidadeDeDigitos == 3) {
         calcCentena = numeroCalc / 100;
-        calcDezena = (numeroCalc - (calcCentena*100)) / 10;
-        calcUnidade = (numeroCalc - (calcCentena*100)) - (calcDezena * 10); 
-        System.out.println(calcCentena);
-        System.out.println(calcDezena);
-        System.out.println(calcUnidade);
+        calcDezena = (numeroCalc - (calcCentena * 100)) / 10;
+        calcUnidade = (numeroCalc - (calcCentena * 100)) - (calcDezena * 10);
+        System.out.println("O numero " + numeroCalc + " tem: " + calcCentena + " centenas, " + calcDezena
+            + " dezenas e " + calcUnidade + " unidades.");
+      } else if(quantidadeDeDigitos == 2) {
+        calcDezena = numeroCalc / 10;
+        calcUnidade = numeroCalc - (calcDezena * 10);
+        System.out.println("O numero " + numeroCalc + " tem: " + calcDezena + " dezenas e " + calcUnidade + " unidades.");
+      } else if (quantidadeDeDigitos == 1) {
+        calcUnidade = numeroCalc;
+        System.out.println("O numero " + numeroCalc + " tem: " + calcUnidade + " unidades.");
       }
     } else {
       System.out.println("Numero Inválido");
