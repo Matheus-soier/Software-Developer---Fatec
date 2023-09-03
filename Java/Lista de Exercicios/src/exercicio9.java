@@ -39,7 +39,7 @@ public class exercicio9 {
     System.out.println("Salário Bruto: (" + salHoras + " * " + horasTrab + "): " + "R$ " + salBruto);
     System.out.println("(-) IR (" + porcIr + ")                 : " + "R$ " + descontoIr);
     System.out.println("(-) INSS (10%)              : " + "R$ " + descontoInss);
-    System.out.println("INSS (11%)                  : " + "R$ " + descontoFgts);
+    System.out.println("FGTS (11%)                  : " + "R$ " + descontoFgts);
     System.out.println("Total de descontos          : " + "R$ " + totalDesconto);
     System.out.println("Salário Liquido             : " + "R$ " + salLiquido);
     System.out.println("------------------------------------------------------------------------");
