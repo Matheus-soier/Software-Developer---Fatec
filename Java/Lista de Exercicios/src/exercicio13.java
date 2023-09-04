@@ -1,40 +1,48 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class exercicio13 {
   public static void main(String[] args) {
-    // Scanner sc = new Scanner(System.in);
-    // int saldo, quantidadeDeDigitos = 0, notaCem, notaCinquenta, notaVinte, notaDez, notaCinco,
-    //     notaUm, sobra;
-
-    // System.out.println("Qual o valor que deseja sacar? ");
-    // saldo = sc.nextInt();
-
-    // int saldoCalc = saldo;
-
-    // if (saldo >= 10 && saldo <= 600) {
-    //   while (saldo != 0) {
-    //     saldo = saldo / 10;
-    //     quantidadeDeDigitos++;
-    //   }
-    //   if (quantidadeDeDigitos == 3) {
-    //     notaCem = saldoCalc / 100;
-    //     sobra = saldoCalc - (notaCem * 100);
-    //     if (sobra >= 50){
-    //       notaCinquenta = sobra / 50;
-
-    //     }
-
-    //     }
-    //   } else if (quantidadeDeDigitos == 2) {
-
-    //   } else if (quantidadeDeDigitos == 1) {
-
-    //   }
-    //  else {
-    //   System.out.println("Digite um valor entre R$10 e R$600 para saque!");
-    // }
-
-   // sc.close();
+    Scanner scanner = new Scanner(System.in);
+        
+        int valorSaque;
+      
+        do {
+            System.out.print("Digite o valor do saque (entre 10 e 600 reais): ");
+            valorSaque = scanner.nextInt();
+        } while (valorSaque < 10 || valorSaque > 600);
+        
+        int notas100 = valorSaque / 100;
+        valorSaque %= 100;
+        
+        int notas50 = valorSaque / 50;
+        valorSaque %= 50;
+        
+        int notas10 = valorSaque / 10;
+        valorSaque %= 10;
+        
+        int notas5 = valorSaque / 5;
+        valorSaque %= 5;
+        
+        int notas1 = valorSaque;
+        
+        System.out.println("Notas a serem fornecidas:");
+        if (notas100 > 0) {
+            System.out.println(notas100 + " nota(s) de 100 reais");
+        }
+        if (notas50 > 0) {
+            System.out.println(notas50 + " nota(s) de 50 reais");
+        }
+        if (notas10 > 0) {
+            System.out.println(notas10 + " nota(s) de 10 reais");
+        }
+        if (notas5 > 0) {
+            System.out.println(notas5 + " nota(s) de 5 reais");
+        }
+        if (notas1 > 0) {
+            System.out.println(notas1 + " nota(s) de 1 real");
+        }
+        
+        scanner.close();
   }
 }
 
