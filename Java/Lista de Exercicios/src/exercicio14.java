@@ -61,7 +61,10 @@ public class exercicio14 {
       case 2:
         System.out.println("Você é suspeito!");
         break;
-      case 3, 4:
+      case 3:
+        System.out.println("Você é Cumplice!");
+        break;
+      case 4:
         System.out.println("Você é Cumplice!");
         break;
       case 5:
