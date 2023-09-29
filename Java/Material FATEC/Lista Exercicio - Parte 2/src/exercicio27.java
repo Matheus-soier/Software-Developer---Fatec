@@ -23,7 +23,7 @@ public class exercicio27 {
 			System.out.println("Valor inválido!");
 		}
 		
-		//condicionais
+		//condicional
 		sc.close();
 		
 	}
