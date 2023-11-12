@@ -1,6 +1,7 @@
 public class ContaTeste {
     public static void main(String[] args) {
-        Conta contaCorrente = new Conta();
+       Conta contaCorrente = new Conta();
+       Conta contaPoupança = new Conta();
        contaCorrente.setAgencia(123);
        contaCorrente.setNumero(321);
        contaCorrente.depositar(500);
